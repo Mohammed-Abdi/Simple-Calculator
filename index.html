@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple Calculator" />
+    <link rel="icon" href="assets/icons/GPAcalculator-Logo-black.svg" />
+    <link
+      rel="icon"
+      href="assets/icons/GPAcalculator-Logo-white.svg"
+      media="(prefers-color-scheme:dark)"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+    <script src="js/menu.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menuAndLogo">
+          <div class="menu"><i class="bx bx-menu"></i></div>
+          <a href="#" class="logo">
+            <img
+              class="logoIcon"
+              src="assets/icons/Logo-green.svg"
+              alt="logo"
+            />
+            <span class="logoTxt"
+              >SIMPLE<span class="colored">calculator</span></span
+            >
+          </a>
+        </div>
+      </nav>
+      <div class="sideNav">
+        <span class="mainLogo"
+          >M<img
+            src="assets/icons/GPAcalculator-Logo-black.svg"
+            alt="Logo"
+          />HD</span
+        >
+        <hr />
+        <section class="sideNavMiddle">
+          <a href="https://gpacalculator-mohd.vercel.app" class="logo">
+            <img src="assets/icons/GPAcalculator-Logo.svg" alt="Logo" />
+            <span class="logoTxt"
+              >GPA<span class="colored">calculator</span></span
+            >
+          </a>
+          <a href="https://countsave-mohd.vercel.app/" class="logo">
+            <img src="assets/icons/Logo-yellow.svg" alt="Logo" />
+            <span class="logoTxt">COUNT<span class="colored">save</span></span>
+          </a>
+          <a href="https://azkaraftersalat-mohd.vercel.app" class="logo">
+            <img src="assets/icons/Logo-purple.svg" alt="Logo" />
+            <span class="logoTxt"
+              >AZKAR<span class="colored">afterSalat</span></span
+            >
+          </a>
+          <a href="https://simplecalculator-mohd.vercel.app/" class="logo">
+            <img src="assets/icons/Logo-green.svg" alt="Logo" />
+            <span class="logoTxt"
+              >SIMPLE<span class="colored">calculator</span></span
+            >
+          </a>
+        </section>
+        <hr />
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="display"></div>
+        <div class="numbersAndOperations">
+          <div class="leftCategory">
+            <button class="erase" onclick="clearDisplay()">C</button>
+
+            <button class="number nine" value="9" onclick="addToDisplay(9)">
+              9
+            </button>
+            <button class="number eight" value="8" onclick="addToDisplay(8)">
+              8
+            </button>
+            <button class="number seven" value="7" onclick="addToDisplay(7)">
+              7
+            </button>
+            <button class="number six" value="6" onclick="addToDisplay(6)">
+              6
+            </button>
+            <button class="number five" value="5" onclick="addToDisplay(5)">
+              5
+            </button>
+            <button class="number four" value="4" onclick="addToDisplay(4)">
+              4
+            </button>
+            <button class="number three" value="3" onclick="addToDisplay(3)">
+              3
+            </button>
+            <button class="number two" value="2" onclick="addToDisplay(2)">
+              2
+            </button>
+            <button class="number one" value="1" onclick="addToDisplay(1)">
+              1
+            </button>
+            <button class="number zero" value="0" onclick="addToDisplay(0)">
+              0
+            </button>
+            <button class="number zero" value="0" onclick="addToDisplay('.')">
+              .
+            </button>
+            <button class="square" onclick="square()">X²</button>
+            <button class="e" onclick="addToDisplay('2.718')">e</button>
+            <button class="square" onclick="addToDisplay('3.14')">π</button>
+          </div>
+
+          <div class="rightCategory">
+            <button class="op plus" value="+" onclick="addToDisplay('+')">
+              +
+            </button>
+            <button class="op minus" value="-" onclick="addToDisplay('-')">
+              -
+            </button>
+            <button class="op multiply" value="*" onclick="addToDisplay('*')">
+              ×
+            </button>
+            <button class="op divide" value="/" onclick="addToDisplay('/')">
+              ÷
+            </button>
+            <button class="equal" onclick="evaluateX()">=</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
